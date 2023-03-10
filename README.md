@@ -1,4 +1,4 @@
-# Quora Login Bypass Userscript
+# NoQuoraLogin
 
 ![logo](logo.png)
 
@@ -9,7 +9,7 @@ This userscript bypasses the prompt to login or signup to [Quora](https://www.qu
 ## Setup: 
 
 1) Find a userscript manager, such as Tampermonkey, Greasemonkey, or Violentmonkey. 
-2) Visit [the raw version of the JavaScript file](https://github.com/glob-bruh/Quora-Login-Bypass-Userscript/raw/main/QuoraLoginBypass.user.js) in this repo.
+2) Visit [the raw version of the JavaScript file](https://github.com/glob-bruh/NoQuoraLogin/raw/main/QuoraLoginBypass.user.js) in this repo.
 3) An extension page should open allowing you to install the script. 
 
 OR alternatively, you can install from link. 

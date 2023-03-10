@@ -1,17 +1,17 @@
 // ==UserScript==
 // @name        Quora Login/Signup Prompt Bypass
 // @description Allows you to view multiple Quora pages without logging in or signing up.
-// @version     1.1
+// @version     1.2
+// @icon        logo.png
+// @grant       none
+// @run-at      document-start
 // @match       https://www.quora.com/*
 // @namespace   https://github.com/
-// @grant       none
-// @downloadURL https://github.com/glob-bruh/Quora-Login-Bypass-Userscript/raw/main/QuoraLoginBypass.user.js
-// @updateURL   https://github.com/glob-bruh/Quora-Login-Bypass-Userscript/raw/main/QuoraLoginBypass.user.js
-// @author      https://github.com/glob-bruh/Quora-Login-Bypass-Userscript/graphs/contributors
-// @homepage    https://github.com/glob-bruh/Quora-Login-Bypass-Userscript
-// @supportURL  https://github.com/glob-bruh/Quora-Login-Bypass-Userscript/issues
-// @run-at      document-start
-// @icon        logo.png
+// @downloadURL https://github.com/glob-bruh/NoQuoraLogin/raw/main/QuoraLoginBypass.user.js
+// @updateURL   https://github.com/glob-bruh/NoQuoraLogin/raw/main/QuoraLoginBypass.user.js
+// @author      https://github.com/glob-bruh/NoQuoraLogin/graphs/contributors
+// @homepage    https://github.com/glob-bruh/NoQuoraLogin
+// @supportURL  https://github.com/glob-bruh/NoQuoraLogin/issues
 // ==/UserScript==
 
 // Whitelisted URL's:
