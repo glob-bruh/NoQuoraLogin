@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name        Quora Login/Signup Prompt Bypass
-// @description Allows you to view multiple Quora pages without logging in or signing up.
-// @version     1.2
+// @name        NoQuoraLogin
+// @description Allows you to view Quora pages without being prompted to login or sign up.
+// @version     1.3
 // @icon        logo.png
 // @grant       none
 // @run-at      document-start
