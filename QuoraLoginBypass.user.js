@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name        NoQuoraLogin
 // @description Allows you to view Quora pages without being prompted to login or sign up.
-// @version     1.3
+// @version     1.4
 // @icon        logo.png
 // @grant       none
 // @run-at      document-start
 // @match       https://www.quora.com/*
 // @namespace   https://github.com/
-// @downloadURL https://github.com/glob-bruh/NoQuoraLogin/raw/main/QuoraLoginBypass.user.js
-// @updateURL   https://github.com/glob-bruh/NoQuoraLogin/raw/main/QuoraLoginBypass.user.js
+// @downloadURL https://github.com/glob-bruh/NoQuoraLogin/raw/main/NoQuoraLogin.user.js
+// @updateURL   https://github.com/glob-bruh/NoQuoraLogin/raw/main/NoQuoraLogin.user.js
 // @author      https://github.com/glob-bruh/NoQuoraLogin/graphs/contributors
 // @homepage    https://github.com/glob-bruh/NoQuoraLogin
 // @supportURL  https://github.com/glob-bruh/NoQuoraLogin/issues
