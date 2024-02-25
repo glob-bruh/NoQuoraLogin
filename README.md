@@ -4,7 +4,12 @@
 
 ## Purpose:
 
-This userscript bypasses the prompt to login or signup to [Quora](https://www.quora.com/) by automatically adding `share=1` as an argument to the URL. 
+This userscript allows users visiting [Quora](https://www.quora.com/) to circumvent requests to login and use features that would normally require a account.
+
+## Features:
+
+* Automatically appends `share=1` to the end of the URL to circumvent the page requesting signup.
+* Button to toggle light/dark mode. 
 
 ## Setup: 
 
@@ -21,6 +26,14 @@ OR alternatively, you can install from link.
 ## Contributing:
 
 Contributions are welcome, make sure to increase the `@version` on line 6 so automatic updates are triggered after your pull request gets merged.
+
+### Dark mode development checklist (remove before PR):
+- [x] Check to see if user is on light/dark mode.
+- [x] Implement __styled__ button onto page.
+- [ ] Change cookie upon click and reload page.
+- [ ] Mobile support.
+- [ ] Test Chrome.
+- [ ] Edit main branch to allow for users scripts to automatically update to the new userscript filename (give 1 week allowance before PR). 
 
 ## License:
 
