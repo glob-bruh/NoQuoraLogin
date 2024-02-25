@@ -8,7 +8,7 @@ This userscript allows users visiting [Quora](https://www.quora.com/) to circumv
 
 ## Features:
 
-* Automatically appends `share=1` to the end of the URL to circumvent the page requesting signup.
+* Automatically appends `share=1` to the end of the URL to circumvent the page requesting sign-up.
 * Button to toggle light/dark mode. 
 
 ## Setup: 
@@ -30,9 +30,9 @@ Contributions are welcome, make sure to increase the `@version` on line 6 so aut
 ### Dark mode development checklist (remove before PR):
 - [x] Check to see if user is on light/dark mode.
 - [x] Implement __styled__ button onto page.
-- [ ] Change cookie upon click and reload page.
+- [x] Change cookie upon click and reload page.
 - [ ] Mobile support.
-- [ ] Test Chrome.
+- [ ] Test other browsers and userscript managers.
 - [ ] Edit main branch to allow for users scripts to automatically update to the new userscript filename (give 1 week allowance before PR). 
 
 ## License:

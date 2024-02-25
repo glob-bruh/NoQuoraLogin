@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name        NoQuoraLogin
 // @description Allows Quora pages to be viewed without being prompted to login or sign up.
-// @version     2.0
+// @version     2.0.0
 // @icon        logo.png
 // @grant       none
-// @run-at      document-end
+// @run-at      document-start
 // @match       https://www.quora.com/*
 // @namespace   https://github.com/
 // @downloadURL https://github.com/glob-bruh/NoQuoraLogin/raw/main/NoQuoraLogin.user.js
@@ -50,11 +50,17 @@ function shareCheck() {
 }
 
 function changeThemeCookie() {
-    alert("Button works! Feature not implemented.")
+    x = new Date();
+    x.setTime(x.getTime() + (30 * 24 * 60 * 60 * 1000));
+    expireDate = x.toUTCString();
+    if (curTheme == "dark") {
+        document.cookie = "m-theme=light; expires=" + expireDate + "; domain=.quora.com; path=/";
+    } else if (curTheme == "light") {
+        document.cookie = "m-theme=dark; expires=" + expireDate + "; domain=.quora.com; path=/";
+    }
+    location.reload();
 }
 
-// Figure out how to wait until the page is fully
-// loaded before (with run-at:document-start) executing this.
 function addThemeButton(text) {
     var x = document.createElement("button");
     x.onclick = changeThemeCookie;
@@ -65,9 +71,13 @@ function addThemeButton(text) {
     x.style.paddingRight = "15px";
     x.style.borderRadius = "1000px";
     x.style.borderWidth = "0px";
-    x.style.backgroundColor = "#b92b27";
-    x.appendChild(document.createTextNode(text))
-    document.getElementsByClassName("q-flex")[4].appendChild(x)
+    if (curTheme == "dark") {
+        x.style.backgroundColor = "#f52936";
+    } else {
+        x.style.backgroundColor = "#b92b27";
+    }
+    x.appendChild(document.createTextNode(text));
+    document.getElementsByClassName("q-flex")[4].appendChild(x);
 }
 
 function themeLogic() {
@@ -75,15 +85,18 @@ function themeLogic() {
     for (i = 0; i < x.length; i++) {
         y = x[i].split("=")
         if (y[0].trim() == "m-theme") {
-            if (y[1] == "light") {
-                addThemeButton("Dark mode")
-            } 
-            else if (y[1] == "dark") {
-                addThemeButton("Light mode")
+            curTheme = y[1]
+            if (curTheme == "dark") {
+                addThemeButton("Light mode");
+            } else {
+                addThemeButton("Dark mode");
             }
         }
     }
 }
 
-shareCheck()
-themeLogic()
+shareCheck();
+
+document.addEventListener("DOMContentLoaded", (event) => {
+    themeLogic();
+});
