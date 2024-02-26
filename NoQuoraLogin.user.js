@@ -87,9 +87,9 @@ function themeLogic() {
         if (y[0].trim() == "m-theme") {
             curTheme = y[1]
             if (curTheme == "dark") {
-                addThemeButton("Light mode");
+                addThemeButton("Light Mode");
             } else {
-                addThemeButton("Dark mode");
+                addThemeButton("Dark Mode");
             }
         }
     }

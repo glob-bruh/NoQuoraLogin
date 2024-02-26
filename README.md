@@ -31,9 +31,8 @@ Contributions are welcome, make sure to increase the `@version` on line 6 so aut
 - [x] Check to see if user is on light/dark mode.
 - [x] Implement __styled__ button onto page.
 - [x] Change cookie upon click and reload page.
-- [ ] Mobile support.
-- [ ] Test other browsers and userscript managers.
-- [ ] Edit main branch to allow for users scripts to automatically update to the new userscript filename (give 1 week allowance before PR). 
+- [x] Mobile support.
+- [x] Edit main branch to allow for users scripts to automatically update to the new userscript filename (give 1 week allowance before PR). 
 
 ## License:
 
