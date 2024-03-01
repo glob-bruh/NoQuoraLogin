@@ -27,13 +27,6 @@ OR alternatively, you can install from link.
 
 Contributions are welcome, make sure to increase the `@version` on line 6 so automatic updates are triggered after your pull request gets merged.
 
-### Dark mode development checklist (remove before PR):
-- [x] Check to see if user is on light/dark mode.
-- [x] Implement __styled__ button onto page.
-- [x] Change cookie upon click and reload page.
-- [x] Mobile support.
-- [x] Edit main branch to allow for users scripts to automatically update to the new userscript filename (give 1 week allowance before PR). 
-
 ## License:
 
 Licensed under [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).
