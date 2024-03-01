@@ -4,12 +4,17 @@
 
 ## Purpose:
 
-This userscript bypasses the prompt to login or signup to [Quora](https://www.quora.com/) by automatically adding `share=1` as an argument to the URL. 
+This userscript allows users visiting [Quora](https://www.quora.com/) to circumvent requests to login and use features that would normally require a account.
+
+## Features:
+
+* Automatically appends `share=1` to the end of the URL to circumvent the page requesting sign-up.
+* Button to toggle light/dark mode. 
 
 ## Setup: 
 
 1) Find a userscript manager, such as Tampermonkey, Greasemonkey, or Violentmonkey. 
-2) Visit [the raw version of the JavaScript file](https://github.com/glob-bruh/NoQuoraLogin/raw/main/QuoraLoginBypass.user.js) in this repo.
+2) Visit [the raw version of the JavaScript file](https://github.com/glob-bruh/NoQuoraLogin/raw/main/NoQuoraLogin.user.js) in this repo.
 3) An extension page should open allowing you to install the script. 
 
 OR alternatively, you can install from link. 
