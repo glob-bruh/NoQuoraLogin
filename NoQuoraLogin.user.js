@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        NoQuoraLogin
 // @description Allows Quora pages to be viewed without being prompted to login or sign up.
-// @version     2.0.1
+// @version     2.0.2
 // @icon        logo.png
 // @grant       none
 // @run-at      document-start
@@ -75,8 +75,22 @@ function addThemeButton(text) {
     x.style.borderWidth = "0px";
     if (curTheme == "dark") {
         x.style.backgroundColor = "#f52936";
+        x.onmouseenter = function() {
+          x.style.cursor = "pointer";
+          x.style.backgroundColor = "#b92b27";
+        };
+        x.onmouseleave = function() {
+          x.style.backgroundColor = "#f52936";
+        }
     } else {
         x.style.backgroundColor = "#b92b27";
+        x.onmouseenter = function() {
+          x.style.cursor = "pointer";
+          x.style.backgroundColor = "#f52936";
+        };
+        x.onmouseleave = function() {
+          x.style.backgroundColor = "#b92b27"
+        }
     }
     x.appendChild(document.createTextNode(text));
     document.getElementsByClassName("q-flex")[4].appendChild(x);
